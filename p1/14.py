@@ -1,0 +1,4 @@
+word1, word2 = input().split()
+
+print(word1)
+print(word2)
