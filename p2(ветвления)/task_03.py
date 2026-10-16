@@ -1,4 +1,3 @@
-# Да и нет не говорить
 print("Вы поедете на бал?")
 answer = input("Ответ (строчными буквами): ")
 if not (answer == "да" or answer == "Да" or answer == "ДА"

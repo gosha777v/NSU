@@ -1,4 +1,3 @@
-# turtle нужна для рисунка: это дополнительная библиотека к семинару.
 import turtle
 
 xc = float(input("xc = "))
@@ -10,7 +9,6 @@ y = float(input("y = "))
 if r <= 0:
     print("Радиус должен быть положительным")
 else:
-    # Сравниваем квадрат расстояния с квадратом радиуса.
     distance_squared = (x - xc) ** 2 + (y - yc) ** 2
     difference = distance_squared - r ** 2
     if difference < 0:
@@ -24,7 +22,6 @@ else:
         message = "Точка вне окружности"
     print(message)
 
-    # Квадратная область просмотра включает окружность и точку.
     left = xc - r
     right = xc + r
     bottom = yc - r
@@ -47,8 +44,6 @@ else:
     turtle.title(message)
     turtle.speed(0)
 
-    # circle рисует круг слева от направления движения пера.
-    # Поэтому начинаем с нижней точки окружности, смотря вправо.
     turtle.penup()
     turtle.goto(xc, yc - r)
     turtle.pendown()
@@ -58,4 +53,4 @@ else:
     turtle.goto(x, y)
     turtle.dot(7, "red")
     turtle.hideturtle()
-    turtle.done()  # Окно остаётся открытым.
+    turtle.done() 
