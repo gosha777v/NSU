@@ -1,24 +1,27 @@
-# Индекс массы тела
-weight = float(input("Масса, фунты: "))
-height_inches = float(input("Рост, дюймы: "))
-if weight <= 0 or height_inches <= 0:
-    print("Масса и рост должны быть положительными")
+m = int(input("Введите вес в фунтах: "))
+h = int(input("Введите рост в дюймах: "))
+
+if m <= 0 or h <= 0:
+    print("Вес и рост должны быть положительными")
 else:
-    weight_kg = weight * 0.45359237
-    height = height_inches * 0.0254
-    bmi = weight_kg / height ** 2
-    print(f"ИМТ: {bmi:.2f}")
-    if bmi < 16:
-        print("выраженный дефицит массы тела")
-    elif bmi < 18.5:
-        print("недостаточная масса тела")
-    elif bmi < 25:
-        print("норма")
-    elif bmi < 30:
-        print("избыточная масса тела")
-    elif bmi < 35:
-        print("ожирение первой степени")
-    elif bmi < 40:
-        print("ожирение второй степени")
+    m1 = m * 0.453592
+    h1 = (h * 0.0254) ** 2
+
+    index = m1 / h1
+
+    print("ИМТ =", round(index, 2))
+
+    if index < 16:
+        print("Выраженный дефицит массы тела")
+    elif index < 18.5:
+        print("Недостаточная масса тела")
+    elif index < 25:
+        print("Норма")
+    elif index < 30:
+        print("Избыточная масса тела")
+    elif index < 35:
+        print("Ожирение первой степени")
+    elif index < 40:
+        print("Ожирение второй степени")
     else:
-        print("ожирение третьей степени")
+        print("Ожирение третьей степени")
