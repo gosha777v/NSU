@@ -1,8 +1,0 @@
-n, k, m = map(int, input().split())
-if k >= n:
-    s = 2
-else:
-    s = (2*n) // k 
-    if (2*n) % k != 0:
-        s += 1
-print(s*m)  
