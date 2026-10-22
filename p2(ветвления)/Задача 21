@@ -1,8 +1,7 @@
-a, b,minus, c, d = input()
+a, b, minus, c, d = input()
 b = int(b)
 d = int(d)
 
-x = 0
 if a == "a":
     x = 1
 elif a == "b":
@@ -17,10 +16,9 @@ elif a == "f":
     x = 6
 elif a == "g":
     x = 7
-elif a == "h":
+else:
     x = 8
 
-x2 = 0
 if c == "a":
     x2 = 1
 elif c == "b":
@@ -35,27 +33,13 @@ elif c == "f":
     x2 = 6
 elif c == "g":
     x2 = 7
-elif c == "h":
+else:
     x2 = 8
 
 dx = x2 - x
 dy = d - b
 
-if dx == 1 and dy == 2:
-   print("ДА")
-elif dx == 1 and dy == -2:
-   print("ДА")
-elif dx == -1 and dy == 2:
-   print("ДА")
-elif dx == -1 and dy == -2:
-   print("ДА")
-elif dx == 2 and dy == 1:
-   print("ДА")
-elif dx == 2 and dy == -1:
-   print("ДА")
-elif dx == -2 and dy == 1:
-   print("ДА")
-elif dx == -2 and dy == -1:
-   print("ДА")
+if dx ** 2 + dy ** 2 == 5:
+    print("верно")
 else:
-   print("НЕТ")
+    print("ошибка")
