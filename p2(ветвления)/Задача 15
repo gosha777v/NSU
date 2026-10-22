@@ -1,0 +1,11 @@
+n, k, m = map(int,input().split()) 
+if k > m:
+    a = k - m - 1
+    a = m - k - 1 
+
+b = n - a - 2 
+
+if a < b: 
+    print(a)
+else:
+    print(b)    

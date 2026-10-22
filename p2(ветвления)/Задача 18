@@ -1,0 +1,10 @@
+a, b = map(int, input().split('*'))
+c, d, e = map(int, input().split('*'))
+if (c <= a and d <= b) or (d <= a and c <= b):
+    print('да')
+elif (c <= a and e <= b) or (e <= a and c <= b):#
+    print('да')
+elif (d <= a and e <= b) or (e <= a and d <= b):#
+    print('да')
+else:
+    print('нет')           
