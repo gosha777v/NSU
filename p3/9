@@ -1,0 +1,7 @@
+n,k,r = map(float,input().split())
+count = 1
+while n < r:
+    count += 1
+    n = n*(1+k/100)
+print(count)    
+

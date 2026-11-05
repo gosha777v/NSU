@@ -1,0 +1,7 @@
+a = int(input())
+win = 0
+while a != -1:
+    if a >= win:
+        win = a
+    a = int(input())
+print(win)        

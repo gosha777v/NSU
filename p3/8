@@ -1,0 +1,7 @@
+N = int(input('Загадай число'))
+k = 1
+count = 0
+while k < N:
+    k *= 2
+    count += 1
+print(count)    

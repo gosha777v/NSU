@@ -1,0 +1,7 @@
+import math
+
+a = int(input())
+while a<0 or (round(math.sqrt(a))) ** 2 != a:
+    print("Число не является полным квадратом")
+    a = int(input("Введите другое число"))
+print("Число", a, "является полным квадратом")
